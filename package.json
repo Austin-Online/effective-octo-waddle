@@ -1,0 +1,25 @@
+{
+  "name": "effective-octo-waddle",
+  "version": "1.0.0",
+  "description": "Module 18",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Austin-Online/effective-octo-waddle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^7.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/Austin-Online/effective-octo-waddle/issues"
+  },
+  "homepage": "https://github.com/Austin-Online/effective-octo-waddle#readme"
+}
