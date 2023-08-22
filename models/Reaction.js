@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
-const  { Schema, model, Types } = mongoose;
 
-const reactionSchema = new Schema(
+const reactionSchema = new mongoose.Schema(
   {
     reactionId: {
-      type: Schema.Types.ObjectId,
-      default: () => new mongoose.Types.ObjectId(),
+      type: mongoose.Schema.Types.ObjectId,
+      default: mongoose.Types.ObjectId,
     },
     reactionText: {
       type: String,
@@ -19,7 +18,7 @@ const reactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      get: (timestamp) => new Date(timestamp).toISOString(),
+      get: timestamp => new Date(timestamp).toISOString(),
     },
   },
   {
@@ -27,4 +26,4 @@ const reactionSchema = new Schema(
   }
 );
 
-module.exports = reactionSchema;
+module.exports = mongoose.model('Reaction', reactionSchema);
